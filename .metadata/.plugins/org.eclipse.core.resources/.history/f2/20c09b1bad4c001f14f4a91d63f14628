@@ -1,0 +1,4 @@
+FROM openjdk:17
+COPY target/restapp.jar/usr/app
+WORKDIR /usr/app
+ENTRYPOINT [ "java","-jar","restapp.jar" ]
